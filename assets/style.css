@@ -1,0 +1,196 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* display: relative; */
+  min-height: 100vh;
+  font-family: "JetBrains mono", monospace;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 6, 23, 0.1),
+      rgba(2, 6, 23, 0.6),
+      rgba(2, 6, 23, 1)
+    ),
+    url(/assets/bg-img.png);
+}
+
+.main-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: auto; */
+  /* max-width: 50%; */
+  margin-top: 230px;
+}
+
+.main-title {
+  font-size: 60px;
+  text-shadow: 3px 3px 3px rgb(100, 116, 139);
+  text-align: center;
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+.detento {
+  text-decoration: line-through;
+}
+
+.post-container {
+  background: rgb(15, 23, 42);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+  max-width: 65%;
+  min-width: 65%;
+  margin-bottom: 50px;
+}
+
+.post-header {
+  min-width: 100%;
+}
+
+.post-header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* min-width: 100%; */
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  /* margin-bottom: 8px; */
+}
+
+.time-created {
+  margin-left: auto;
+  align-self: center;
+  color: #888;
+  font-size: 0.9em;
+  border: 0.5px;
+  border-radius: 50px;
+  padding: 6px 12px;
+  /* max-height: 18px; */
+  background: linear-gradient(to right, #111827, #374151);
+}
+
+.post-body {
+  font-size: 1em;
+  color: rgb(216, 216, 216);
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.reactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.reactions div {
+  /* Div fantasma para ocupar espaço inicial e centralizar o proximo item */
+  flex-basis: 81px; /* Flex-basis faz a div ter um tamanho inicial */
+}
+
+.button {
+  justify-content: flex-end;
+  background: linear-gradient(to right, #111827, #374151);
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: 0.5px;
+  border-radius: 50px;
+  padding: 6px 12px;
+}
+
+
+.button1 {
+  justify-content: flex-end;
+  background: linear-gradient(to right, #1a2a6c, #172046);
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: 0.5px;
+  border-radius: 50px;
+  padding: 6px 12px;
+}
+
+
+.github-version {
+  text-decoration: none;
+  font-weight: 600;
+  background-color: rgb(71, 85, 105);
+  margin-bottom: 7px;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.github-version:hover {
+  color: greenyellow;
+}
+
+.html-color {
+  color: rgb(255, 141, 88);
+}
+
+.css-color {
+  color: rgb(60, 167, 255);
+}
+
+.javascript-color {
+  color: rgb(253, 255, 143);
+}
+
+.terminal-color {
+  color: darkgreen;
+}
+
+.github-color {
+  color: purple;
+}
+
+.ia-color {
+  color: aquamarine;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Define dark mode variables here (or let them be the default :root) */
+    --background-color: #1a1a2e;
+    --text-color: #e0e0e0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Define light mode variables here */
+    --background-color: #ffffff;
+    --text-color: #333333;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-div {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+  }
+  .main-title {
+    font-size: 30px; /* Make title smaller */
+  }
+
+  .main-div {
+    max-width: 80%;
+  }
+}
