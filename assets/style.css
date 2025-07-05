@@ -3,7 +3,7 @@
   --color-css: rgb(60, 167, 255);
   --color-javascript: rgb(253, 255, 143);
   --color-terminal: darkgreen;
-  --color-github: purple;
+  --color-github: rgb(128, 0, 128);
   --color-ia: aquamarine;
 }
 
@@ -205,14 +205,14 @@ nav ul {
   color: white;
   text-align: center;
   padding: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
