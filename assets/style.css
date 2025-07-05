@@ -1,3 +1,12 @@
+:root {
+  --color-html: rgb(255, 141, 88);
+  --color-css: rgb(60, 167, 255);
+  --color-javascript: rgb(253, 255, 143);
+  --color-terminal: darkgreen;
+  --color-github: purple;
+  --color-ia: aquamarine;
+}
+
 html,
 body {
   margin: 0;
@@ -5,9 +14,8 @@ body {
 }
 
 body {
-  /* display: relative; */
   min-height: 100vh;
-  font-family: "JetBrains mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 600;
   font-optical-sizing: auto;
   font-style: normal;
@@ -24,30 +32,21 @@ body {
     url(bg-img.png);
 }
 
+nav ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  margin: 0; /* Remove a margem padrão da lista */
+}
+
 .main-header-child {
-  font-size: 40px;
+  font-size: 2.3em;
   text-shadow: 0px 3px 5px rgb(0, 0, 0);
   text-align: center;
-  /* margin-top: 20; */
-  /* padding-top: 25px; */
   background: rgb(15, 23, 42, 0.1);
   border-radius: 12px;
   padding: 16px;
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
-
-
-/* .main-title {
-  font-size: 60px;
-  text-shadow: 0px 3px 5px rgb(0, 0, 0);
-  text-align: center;
-  margin-top: 20;
-  padding-top: 25px;
-  background: rgb(15, 23, 42, 0.1);
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
-} */
 
 .detento {
   text-decoration: line-through;
@@ -62,18 +61,12 @@ body {
   font-size: 1.8em;
   margin-bottom: 50px;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
-  /* background: rgb(15, 23, 42, 0);
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3); */
 }
 
 .main-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: auto; */
-  /* max-width: 50%; */
   margin-top: 100px;
 }
 
@@ -83,7 +76,6 @@ body {
     rgba(17, 24, 39, 0.8),
     rgba(15, 23, 42, 1)
   );
-  /* background: rgb(15, 23, 42); */
   border-radius: 12px;
   padding: 16px;
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
@@ -103,7 +95,6 @@ body {
   font-weight: bold;
   font-size: 1.2em;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
-  /* margin-bottom: 8px; */
 }
 
 .time-created {
@@ -114,7 +105,6 @@ body {
   border: 0.5px;
   border-radius: 50px;
   padding: 6px 12px;
-  /* max-height: 18px; */
   background: linear-gradient(to right, #111827, #374151);
 }
 
@@ -136,77 +126,99 @@ body {
   flex-basis: 81px; /* Flex-basis faz a div ter um tamanho inicial */
 }
 
-.button {
-  background: linear-gradient(to right, #111827, #374151);
-  color: white;
-  font-size: 0.9em;
-  cursor: pointer;
-  border: 0.5px;
-  border-radius: 50px;
-  padding: 6px 12px;
-}
-
-.button1 {
-  background: linear-gradient(to right, #2c3e50, #4a69bd);
-  color: white;
-  font-size: 0.9em;
-  cursor: pointer;
-  border: 0.5px;
-  border-radius: 50px;
-  padding: 6px 12px;
-}
-
-.button2 {
+.feels1 {
   background: linear-gradient(to right, #1a2a6c, #172046);
   color: white;
-  font-size: 0.9em;
-  cursor: pointer;
+  font-size: 0.8em;
   border: 0.5px;
   border-radius: 50px;
   padding: 6px 12px;
 }
 
-.github-version {
+.feels3 {
+  background: linear-gradient(to right, #111827, #374151);
+  color: white;
+  font-size: 0.8em;
+  border: 0.5px;
+  border-radius: 50px;
+  padding: 6px 12px;
+}
+
+.feels2 {
+  background: linear-gradient(to right, #1E3A59, #0A1C2C);
+  color: white;
+  font-size: 0.8em;
+  border: 0.5px;
+  border-radius: 50px;
+  padding: 6px 12px;
+}
+
+.github-link {
   text-decoration: none;
   font-weight: 600;
-  background-color: rgb(71, 85, 105);
+  font-size: 1em;
+  background: linear-gradient(to right, #0d1117, #24292e);
   margin-bottom: 7px;
   border-radius: 10px;
   padding: 5px;
   color: rgb(255, 255, 255);
 }
 
-.github-version:hover {
+.github-version {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  background: linear-gradient(to right, #1a2a6c, #172046);
+  margin-bottom: 7px;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.linkedin-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  background: linear-gradient(to right, #001e3c, #003973);
+  margin-bottom: 7px;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.github-version:hover,
+.github-link:hover,
+.linkedin-link:hover,
+.github-version:focus, /* Adicionado */
+.github-link:focus,    /* Adicionado */
+.linkedin-link:focus { /* Adicionado */
   color: greenyellow;
+  outline: 2px solid greenyellow;
 }
 
-.html-color {
-  color: rgb(255, 141, 88);
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(15, 23, 42, 0.2);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
 }
 
-.css-color {
-  color: rgb(60, 167, 255);
-}
-
-.javascript-color {
-  color: rgb(253, 255, 143);
-}
-
-.terminal-color {
-  color: darkgreen;
-}
-
-.github-color {
-  color: purple;
-}
-
-.ia-color {
-  color: aquamarine;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Define dark mode variables here (or let them be the default :root) */
+    /* Define variáveis do dark mode (ou coloca na :root para deixar como padrão) */
     --background-color: #1a1a2e;
     --text-color: #e0e0e0;
   }
@@ -214,7 +226,7 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Define light mode variables here */
+    /* Define variáveis do light mode  */
     --background-color: #ffffff;
     --text-color: #333333;
   }
@@ -222,13 +234,37 @@ body {
 
 @media (max-width: 768px) {
   .menu-div {
-    flex-direction: column; /* Stack menu items vertically on small screens */
+    flex-direction: column;
   }
   .main-title {
-    font-size: 30px; /* Make title smaller */
+    font-size: 0.8em;
   }
 
   .main-div {
     max-width: 80%;
   }
+}
+
+.html-color {
+  color: var(--color-html);
+}
+
+.css-color {
+  color: var(--color-css);
+}
+
+.javascript-color {
+  color: var(--color-javascript);
+}
+
+.terminal-color {
+  color: var(--color-terminal);
+}
+
+.github-color {
+  color: var(--color-github);
+}
+
+.ia-color {
+  color: var(--color-ia);
 }
